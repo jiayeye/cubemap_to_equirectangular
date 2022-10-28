@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Cubemap to Equirectangular">
+  <title>Panorama to Cubemap</title>
+  <style>
+    body {
+      margin: 1em auto;
+      max-width: 800px;
+    }
+    .settings > * {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+    #cubemap {
+      width: 800px;
+      height: 600px;
+      position: relative;
+      border: 1px solid #888;
+      background: #eee;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cubemap to Equirectangular</h1>
+  </header>
+
+  <main>
+    <section>
+      <div>Up <input id="imageInput_up" type="file" accept="image/*"></div>
+      <div>Down <input id="imageInput_down" type="file" accept="image/*"></div>
+      <div>Left <input id="imageInput_left" type="file" accept="image/*"></div>
+      <div>Right <input id="imageInput_right" type="file" accept="image/*"></div>
+      <div>Front <input id="imageInput_front" type="file" accept="image/*"></div>
+      <div>Back <input id="imageInput_back" type="file" accept="image/*"></div>
+    </section>
+
+    <section>
+      <b id="generating" style="visibility:hidden">Generating...</b>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
