@@ -96,10 +96,12 @@
         if (imagesMap.size >= 6) {
           // 显示生成状态
           dom.generating.style.visibility = 'visible';
-          // 加载六面图后左融合处理
-          processImages();
-          // 隐藏状态
-          dom.generating.style.visibility = 'hidden';
+          setTimeout(() => {
+            // 加载六面图后左融合处理
+            processImages();
+            // 隐藏状态
+            dom.generating.style.visibility = 'hidden';
+          }, 200 )
         }
       });
     }
